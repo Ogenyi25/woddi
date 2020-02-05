@@ -1,5 +1,4 @@
 .home {
-  font-family: "playfair Display", serif;
     .welcome {
       display: flex;
       align-items: center;
@@ -76,6 +75,38 @@
           }
         }
       }
+    }
+    .modal-content {
+      .modal-body {
+        .donor-amount {
+          margin-top: 10px;
+          font-weight: bold;
+        }
+        .modal-body-donation {
+          background-color: lemonchiffon;
+          .form-group {
+            margin-left: 15px;
+            margin-top: 15px;
+          }
+          .or {
+            margin-left: 50px;
+          }
+          .form-group-input {
+            margin-top: 20px;
+            margin-bottom: 15px;
+          }
+        }
+        .donor-info {
+          .donor-info-title {
+            margin-top: 15px;
+            font-weight: bold;
+          }
+          .donor-info-form {
+            
+          }
+        }
+      }
+      
     }
 }
 /* For mobile phones: */

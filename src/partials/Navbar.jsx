@@ -21,10 +21,10 @@ const Navbar = () => {
         <img className="logo" src={require("../assets/images/logo1.png")} alt="logo" />Woddi</div>
       <div className="body col-md-6">
         <nav class="nav">
-          <a class="nav-link active" href="#">HOME</a>
-          <a class="nav-link" href="#">ABOUT</a>
-          <a class="nav-link" href="#">COURSE</a>
-          <a class="nav-link" href="#">CONTACT</a>
+          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Course</a>
+          <a class="nav-link" href="#">Contact</a>
         </nav>
       </div>
       <div className="float-right col-md-1">

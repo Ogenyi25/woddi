@@ -14,13 +14,83 @@ const Home = () => (
           </h1>
           <p className="welcome-note-body">We are giving health care solutions to every doorstep,
                 <br /> and connecting non-profit, donors, and companies
-              around the world.
+        around the world.
           </p>
         </div>
-        <button className="donate-button">DONATE NOW</button>
+        <button className="donate-button" type="button" data-toggle="modal"
+          data-target="#exampleModal">DONATE NOW</button>
+      </div>
+    </div>
+    {/* ..........MODAL FOR THE DONATION FORM......... */}
+
+    <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div className="modal-dialog" role="document">
+        <div className="modal-content">
+          <div className="modal-header">
+            <h5 className="modal-title" id="exampleModalLabel">DONATION INFORMATION</h5>
+            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div className="modal-body">
+            <h6 className="donor-amount">How much would you like to donate</h6>
+            <div className="modal-body-donation row">
+              <div className="form-group form-check col-md-2">
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">$5000</label>
+              </div>
+
+              <div className="form-group form-check col-md-2">
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">$4000</label>
+              </div>
+
+              <div className="form-group form-check col-md-2">
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">$3000</label>
+              </div>
+
+              <div className="form-group form-check col-md-2">
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">$2000</label>
+              </div>
+
+              <div className="form-group form-check col-md-2">
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">$1000</label>
+              </div>
+              <h6 className="or">Or
+              <div class="form-group-input">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter other amount" />
+                </div>
+              </h6>
+            </div>
+            <div className="donor-info">
+              <h6 className="donor-info-title">
+                Donor Information
+              </h6>
+              <div className="donor-info-form">
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Your Name</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="" />
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Another label</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
       </div>
     </div>
 
+
+    {/* ..........HOW YOUCAN HELP SECTION......... */}
     <div className="contribution">
       <div className="contribution-title">
         how can you help
