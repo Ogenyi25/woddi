@@ -5,7 +5,7 @@
       align-items: center;
       flex-direction: column;
       width: 100%;
-      height: 80vh;
+      height: 90vh;
       background: linear-gradient(to bottom, #000, transparent),
         url(../../images/less-privilege.jpg);
       box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
@@ -34,9 +34,10 @@
         margin-left: 550px;
       }
     }
+
+    //Beginning of styles for the HOW CAN YOU HELP SECTION
     .contribution {
       margin-top: 70px;
-
       .contribution-title {
         text-align: center;
         text-transform: capitalize;
@@ -51,36 +52,114 @@
           background-color: rgba(180, 201, 195, 0.200);
           margin-bottom: 20px;
           border-radius: 10px;
-          .paragraph-title {
-            padding-bottom: 20px;
-            .fa {
-              margin-right: 20px;
-              color: green;
-              margin-top: 30px;
+          padding: 32px 24px;
+          width: fit-content;
+          background-color: #f2f8f9;
+          text-decoration: none;
+          z-index: 0;
+          overflow: hidden;
+          &:before {
+            content: "";
+            position: absolute;
+            z-index: -3;
+            top: -35px;
+            right: -20px;
+            background: rgb(104, 189, 104);
+            height: 46px;
+            width: 46px;
+            border-radius: 32px;
+            transform: scale(1);
+            transform-origin: 50% 50%;
+            transition: transform 0.25s ease-out;
+          }
+        
+          &:hover:before {
+            transform: scale(21);
+          }
+          .contribution-body-left:hover {
+            p {
+              transition: all 0.3s ease-out;
+              color: $white;
+            }
+            h3 {
+              transition: all 0.3s ease-out;
+              color: $white;
             }
           }
+          .paragraph-title {
+            padding-bottom: 20px;
+            text-align: center;
+          }
+          .fa {
+                color: $primary;
+                display: block;
+                margin-bottom: 10px;
+                text-align: center;
+              }
         }
 
         .contribution-body-right {
           margin-left: 8rem;
-          background-color: rgba(180, 201, 195, 0.200);
+          background-color: rgba(215, 223, 221, 0.2);
           margin-bottom: 20px;
           border-radius: 10px;
+          padding: 32px 24px;
+          width: fit-content;
+          background-color: #f2f8f9;
+          text-decoration: none;
+          z-index: 0;
+          overflow: hidden;
+          &:before {
+            content: "";
+            position: absolute;
+            z-index: -3;
+            top: -35px;
+            left: -20px;
+            background: rgb(104, 189, 104);
+            height: 46px;
+            width: 46px;
+            border-radius: 32px;
+            transform: scale(1);
+            transform-origin: 50% 50%;
+            transition: transform 0.25s ease-out;
+          }
+        
+          &:hover:before {
+            transform: scale(21);
+          }
+          .contribution-body-right:hover {
+            p {
+              transition: all 0.3s ease-out;
+              color:white;
+            }
+            h3 {
+              transition: all 0.3s ease-out;
+              color: #ffffff;
+            }
+          }
           .paragraph-title {
             padding-bottom: 20px;
-            .fa {
-              margin-right: 20px;
-              color: green;
-              margin-top: 30px;
-            }
+            text-align: center;
+          }
+          .fa {
+            color: $primary;
+            display: block;
+            margin-bottom: 10px;
+            text-align: center;
           }
         }
       }
     }
+    //End of styles for the HOW CAN YOU HELP SECTION
+
+    //Start of Styles for the donation form
     .modal-content {
-      .modal-title {
-        font-weight: bold;
-        font-size: x-large;
+      .modal-header {
+        background-color: rgb(230, 229, 223);
+        .modal-title {
+          font-weight: bold;
+          font-size: x-large;
+        }
       }
       .modal-body {
         .donor-amount {
@@ -132,7 +211,59 @@
           align-items: center;
         }
       }
-      
+    }
+    //End of styles for the donation form
+
+    .mission {
+      margin-top: 100px;
+      .mission-photo {
+        .img {
+          margin-left: 30px;
+          max-width: 45vw;
+          height: 60vh;
+        }
+      }
+      .mission-statement {
+        padding-left: 40px;
+        flex: 6;
+        .pre-title {
+          font-family: pacifico;
+          font-size: 1.5rem;
+        }
+        .title {
+          font-family: roboto;
+          font-weight: bolder;
+          .woddi {
+            color: $primary;
+            font-family: pacifico;
+          }
+        }
+        .body {
+          
+        }
+      }
+    }
+    .recent-courses {
+      margin-top: 50px;
+      .img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+      }
+      .title {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 900;
+        .course {
+          color: $primary;
+        }
+      }
+      .text {
+        text-align: center;
+        padding-top: 10px;
+      }
     }
 }
 /* For mobile phones: */

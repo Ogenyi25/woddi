@@ -135,7 +135,8 @@ const Home = () => (
       </div>
       <div className="contribution-body row container-fluid">
         <div className="contribution-body-left col-md-4">
-          <h3 className="paragraph-title"><i className="fa fa-money" aria-hidden="true"></i>
+            <i className="fa fa-money fa-2x" aria-hidden="true"></i>
+          <h3 className="paragraph-title">
             Give a Donation
           </h3>
           <p className="paragraph-body">
@@ -146,8 +147,9 @@ const Home = () => (
         </div>
 
         <div className="contribution-body-right col-md-4">
-          <h3 className="paragraph-title"><i className="fa fa-money" aria-hidden="true"></i>
-            Give a Donation
+        <i class="fa fa-tint fa-2x" aria-hidden="true"></i>
+          <h3 className="paragraph-title">
+            Get inspired
           </h3>
           <p className="paragraph-body">
             Help the less priviledged and put a smile on the face of child
@@ -159,8 +161,9 @@ const Home = () => (
 
       <div className="contribution-body row container-fluid">
         <div className="contribution-body-left col-md-4">
-          <h3 className="paragraph-title"><i className="fa fa-money" aria-hidden="true"></i>
-            Give a Donation
+        <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
+          <h3 className="paragraph-title">
+            Be a Volunteer
           </h3>
           <p className="paragraph-body">
             Help the less priviledged and put a smile on the face of child
@@ -170,8 +173,9 @@ const Home = () => (
         </div>
 
         <div className="contribution-body-right col-md-4">
-          <h3 className="paragraph-title"><i className="fa fa-money" aria-hidden="true"></i>
-            Give a Donation
+        <i class="fa fa-gift fa-2x" aria-hidden="true"></i>
+          <h3 className="paragraph-title">
+            Help the Children
           </h3>
           <p className="paragraph-body">
             Help the less priviledged and put a smile on the face of child
@@ -180,7 +184,34 @@ const Home = () => (
           </p>
         </div>
       </div>
+    </div>
 
+    <div className="mission row container-fluid">
+      <div className="mission-photo col-md-6">
+        <img className="img" src={require("../assets/images/about.png")} alt=""/>
+      </div>
+      <div className="mission-statement col-md-6">
+        <h5 className="pre-title">Charity with Mission</h5>
+        <h1 className="title">We are <span className="woddi">WODDI</span></h1>
+        <p className="body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+        laboret dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+        nisi ut aliquip ex ea commodo consequat. <br />
+        <br />Duis aute irure dolor in reprehenderit in voluptate 
+        velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.
+        Sunt in culpa qui officia deserunt mollit anim id est laborum. <br />
+        <br />Sed ut perspiciatis unde omnis iste 
+        natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.
+        <br />
+        WODDI
+        </p>
+      </div>
+    </div>
+
+    <div className="recent-courses">
+      <img className="img" src={require("../assets/images/icon.png")} alt=""/>
+      <div className="title">Our Recent <span className="course">Courses</span></div>
+      <h6 className="text">Children and poor people are at high risk of severe malnutrition & no education</h6>
     </div>
   </div>
 );
