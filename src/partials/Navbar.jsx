@@ -28,13 +28,9 @@ const Navbar = () => {
         </nav>
       </div>
       <div className="float-right col-md-1">
-
-        <button className="book-button" href="#collapseExample" data-toggle="collapse">DONATE</button>
-        <div className="collapse" id="collapseExample">
-          <div className="card card-body">
-
-          </div>
-        </div>
+        <a href="" className="social-links"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="" className="social-links"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="" className="social-links"><i class="fa fa-instagram" aria-hidden="true"></i></a>
       </div>
     </div>
   );

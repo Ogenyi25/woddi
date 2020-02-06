@@ -14,14 +14,15 @@ const Home = () => (
           </h1>
           <p className="welcome-note-body">We are giving health care solutions to every doorstep,
                 <br /> and connecting non-profit, donors, and companies
-        around the world.
+                        around the world.
           </p>
         </div>
         <button className="donate-button" type="button" data-toggle="modal"
           data-target="#exampleModal">DONATE NOW</button>
       </div>
     </div>
-    {/* ..........MODAL FOR THE DONATION FORM......... */}
+
+    {/* ..........START OF MODAL FOR THE DONATION FORM......... */}
 
     <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div className="modal-dialog" role="document">
@@ -69,32 +70,93 @@ const Home = () => (
               <h6 className="donor-info-title">
                 Donor Information
               </h6>
-              <div className="donor-info-form">
-                <div class="form-group">
+              <div className="donor-info-form row">
+                <div class="form-group col-md-6">
                   <label for="formGroupExampleInput">Your Name</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="" />
+                  <input type="text" className="form-control" id="formGroupExampleInput" placeholder="" />
                 </div>
-                <div class="form-group">
-                  <label for="formGroupExampleInput2">Another label</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="" />
+                <div className="form-group col-md-6">
+                  <label for="formGroupExampleInput2">Email</label>
+                  <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="" />
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="formGroupExampleInput">Phone Number</label>
+                  <input type="text" className="form-control" id="formGroupExampleInput" placeholder="" />
+                </div>
+                <div className="form-group col-md-6">
+                  <label for="formGroupExampleInput2">Address</label>
+                  <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="" />
+                </div>
+              </div>
+            </div>
+
+            <div className="payment-option">
+              <h6 className="payment-option-title">Choose your payment option</h6>
+              <div className="payment-option-types row">
+
+                <div className="form-group form-check col-md-2">
+                  <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                  <label className="form-check-label" for="exampleCheck1">Paypal</label>
+                </div>
+
+                <div className="form-group form-check col-md-3">
+                  <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                  <label className="form-check-label" for="exampleCheck1">DebitCard</label>
+                </div>
+
+                <div className="form-group form-check col-md-3">
+                  <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                  <label className="form-check-label" for="exampleCheck1">CreditCard</label>
+                </div>
+
+                <div className="form-group form-check col-md-3">
+                  <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                  <label className="form-check-label" for="exampleCheck1">Offline</label>
                 </div>
               </div>
             </div>
           </div>
           <div className="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button className="btn btn-success">DONATE</button>
           </div>
         </div>
       </div>
     </div>
+    {/* ..........END OF MODAL FOR THE DONATION FORM......... */}
 
 
-    {/* ..........HOW YOUCAN HELP SECTION......... */}
+
+
+    {/* ..........HOW YOU CAN HELP SECTION......... */}
     <div className="contribution">
       <div className="contribution-title">
         how can you help
       </div>
+      <div className="contribution-body row container-fluid">
+        <div className="contribution-body-left col-md-4">
+          <h3 className="paragraph-title"><i className="fa fa-money" aria-hidden="true"></i>
+            Give a Donation
+          </h3>
+          <p className="paragraph-body">
+            Help the less priviledged and put a smile on the face of child
+            less priviledged and put a smile on the face of child
+            less priviledged and put a smile on the face of child
+          </p>
+        </div>
+
+        <div className="contribution-body-right col-md-4">
+          <h3 className="paragraph-title"><i className="fa fa-money" aria-hidden="true"></i>
+            Give a Donation
+          </h3>
+          <p className="paragraph-body">
+            Help the less priviledged and put a smile on the face of child
+            less priviledged and put a smile on the face of child
+            less priviledged and put a smile on the face of child
+          </p>
+        </div>
+      </div>
+
       <div className="contribution-body row container-fluid">
         <div className="contribution-body-left col-md-4">
           <h3 className="paragraph-title"><i className="fa fa-money" aria-hidden="true"></i>

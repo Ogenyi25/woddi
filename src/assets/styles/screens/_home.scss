@@ -1,4 +1,5 @@
 .home {
+  scroll-behavior: smooth;
     .welcome {
       display: flex;
       align-items: center;
@@ -77,13 +78,17 @@
       }
     }
     .modal-content {
+      .modal-title {
+        font-weight: bold;
+        font-size: x-large;
+      }
       .modal-body {
         .donor-amount {
           margin-top: 10px;
           font-weight: bold;
         }
         .modal-body-donation {
-          background-color: lemonchiffon;
+          background-color: rgb(230, 229, 223);
           .form-group {
             margin-left: 15px;
             margin-top: 15px;
@@ -102,8 +107,29 @@
             font-weight: bold;
           }
           .donor-info-form {
-            
+            background-color: rgb(230, 229, 223);
+            .form-group {
+              margin-top: 20px;
+              margin-bottom: 15px;
+            }
           }
+        }
+        .payment-option {
+          margin-top: 20px;
+          .payment-option-title {
+            font-weight: bold;
+          }
+          .payment-option-types {
+            .form-group {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+      .modal-footer {
+        background-color: rgb(230, 229, 223);
+        .btn {
+          align-items: center;
         }
       }
       
