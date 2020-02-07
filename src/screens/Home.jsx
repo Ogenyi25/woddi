@@ -14,7 +14,7 @@ const Home = () => (
           </h1>
           <p className="welcome-note-body">We are giving health care solutions to every doorstep,
                 <br /> and connecting non-profit, donors, and companies
-                        around the world.
+            around the world.
           </p>
         </div>
         <button className="donate-button" type="button" data-toggle="modal"
@@ -135,7 +135,7 @@ const Home = () => (
       </div>
       <div className="contribution-body row container-fluid">
         <div className="contribution-body-left col-md-4">
-            <i className="fa fa-money fa-2x" aria-hidden="true"></i>
+          <i className="fa fa-money fa-2x" aria-hidden="true"></i>
           <h3 className="paragraph-title">
             Give a Donation
           </h3>
@@ -147,7 +147,7 @@ const Home = () => (
         </div>
 
         <div className="contribution-body-right col-md-4">
-        <i class="fa fa-tint fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-tint fa-2x" aria-hidden="true"></i>
           <h3 className="paragraph-title">
             Get inspired
           </h3>
@@ -161,7 +161,7 @@ const Home = () => (
 
       <div className="contribution-body row container-fluid">
         <div className="contribution-body-left col-md-4">
-        <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
           <h3 className="paragraph-title">
             Be a Volunteer
           </h3>
@@ -173,7 +173,7 @@ const Home = () => (
         </div>
 
         <div className="contribution-body-right col-md-4">
-        <i class="fa fa-gift fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-gift fa-2x" aria-hidden="true"></i>
           <h3 className="paragraph-title">
             Help the Children
           </h3>
@@ -188,30 +188,65 @@ const Home = () => (
 
     <div className="mission row container-fluid">
       <div className="mission-photo col-md-6">
-        <img className="img" src={require("../assets/images/about.png")} alt=""/>
+        <img className="img" src={require("../assets/images/about.png")} alt="" />
       </div>
       <div className="mission-statement col-md-6">
         <h5 className="pre-title">Charity with Mission</h5>
         <h1 className="title">We are <span className="woddi">WODDI</span></h1>
         <p className="body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-        laboret dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          laboret dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
         nisi ut aliquip ex ea commodo consequat. <br />
-        <br />Duis aute irure dolor in reprehenderit in voluptate 
-        velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.
+          <br />Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.
         Sunt in culpa qui officia deserunt mollit anim id est laborum. <br />
-        <br />Sed ut perspiciatis unde omnis iste 
-        natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.
+          <br />Sed ut perspiciatis unde omnis iste
+          natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.
         <br />
-        WODDI
+          WODDI
         </p>
       </div>
     </div>
 
     <div className="recent-courses">
-      <img className="img" src={require("../assets/images/icon.png")} alt=""/>
+      <img className="img" src={require("../assets/images/icon.png")} alt="" />
       <div className="title">Our Recent <span className="course">Courses</span></div>
       <h6 className="text">Children and poor people are at high risk of severe malnutrition & no education</h6>
+      <div className="courses-card row container-fluid">
+        <div className="treatment col-md-4">
+          <img className="treatment-img" src={require("../assets/images/about.png")} alt="" />
+          <h6 className="med-pre-title">Medicine</h6>
+          <h4 className="med-title">Medical Treatment</h4>
+          <i class="fa fa-heartbeat fa-2x" aria-hidden="true"></i>
+          <p className="body">
+            Auis nostrud exercitation ullamc laboris nisitm aliquip ex bea sed
+            consequat duis autes ure dolor. dolore magna aliqua nim ad minim.
+          </p>
+        </div>
+        <div className="feeding col-md-4">
+          <img className="feeding-img" src={require("../assets/images/about.png")} alt="" />
+          <h6 className="feed-pre-title">Food & Water</h6>
+          <h4 className="feed-title">Feed Hungry Children</h4>
+          <i class="fa fa-apple fa-2x" aria-hidden="true"></i>
+          <p className="body">
+            Auis nostrud exercitation ullamc laboris nisitm aliquip ex bea sed
+            consequat duis autes ure dolor. dolore magna aliqua nim ad minim.
+          </p>
+        </div>
+        <div className="education col-md-4">
+          <img className="education-img" src={require("../assets/images/about.png")} alt="" />
+          <h6 className="education-pre-title">Education</h6>
+          <h4 className="education-title">Education for People</h4>
+          <i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
+          <p className="body">
+            Auis nostrud exercitation ullamc laboris nisitm aliquip ex bea sed
+            consequat duis autes ure dolor. dolore magna aliqua nim ad minim.
+          </p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style= "width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 );
